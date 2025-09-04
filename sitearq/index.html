@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MedeirosArq</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <a href="#topo" class="logo">
+    <img src="./img/logo.png" alt="Logotipo MedeirosArq" />
+  </a>
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- SLIDES -->
+<section id="topo" class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="./img/imgcarrossel1.jpg" alt="Projeto arquitetônico moderno" class="imgslide">
+  </div>
+  <div class="mySlides fade">
+    <img src="./img/imgcarrossel2.jpg" alt="Interior de casa sofisticada" class="imgslide">
+  </div>
+  <div class="mySlides fade">
+    <img src="./img/imgcarrossel3.jpg" alt="Fachada minimalista" class="imgslide">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</section>
+
+<div class="dots" id="dots"></div>
+
+<!-- SOBRE -->
+<section id="sobre" class="quem">
+  <h2>Sobre Nós</h2>
+  <p>
+    Na MedeirosArq, unimos estética e funcionalidade para criar ambientes únicos.
+    Nosso time é especializado em projetos residenciais e comerciais, sempre prezando
+    pela sustentabilidade e inovação.
+  </p>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Projetos Residenciais</h3>
+      <p>
+        Soluções personalizadas para transformar sua casa em um verdadeiro lar.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Design de Interiores</h3>
+      <p>
+        Criação de ambientes aconchegantes, funcionais e com personalidade.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Consultoria</h3>
+      <p>
+        Orientação profissional para reformas, ampliações e novos projetos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato-section">
+  <h2>Fale Conosco</h2>
+  <form class="form-contato">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="social">
+    <a href="#"><img src="./img/insta.png" alt="Instagram"></a>
+  </div>
+  <p>&copy; 2025 MedeirosArq - Todos os direitos reservados.</p>
+</footer>
+
+<!-- BOTÃO VOLTAR AO TOPO -->
+<button id="btnTopo" title="Voltar ao topo">&#8679;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
